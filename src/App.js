@@ -35,6 +35,10 @@ class App extends Component {
     this.setState({ newTodoDescription: e.target.value });
   }
 
+  deleteTodo(index) {
+    this.setState({ todos: this.state.todos.filter(el => el !== this.state.todos[index]) });
+  }
+
   render() {
     return (
       <div className='App'>
@@ -45,6 +49,7 @@ class App extends Component {
               description={todo.description}
               isCompleted={todo.isCompleted}
               toggleComplete={() => this.toggleComplete(index)}
+              deleteTodo={() => this.deleteTodo(index)}
             />
           ))}
         </ul>
