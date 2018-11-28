@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Initial Objectives
+
+1. Create a hierarchy of class-based React components.
+2. Data Binding to UI — Capturing and setting UI state. Work with form data by using onChange and onSubmit.
+
+- The real accomplishment here is that we're capturing the state of our to-do. When working with a database (or any other form of data storage), this real-time change is invaluable.
+
+3. Pass functions down to child components as props.
+4. Manage application data by defining and manipulating state.
+5. Pass data down to child components using props.
+
 ## Available Scripts
 
 In the project directory, you can run:
