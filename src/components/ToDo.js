@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
+import '../assets/shards.min.css';
 
 export default class ToDo extends Component {
   render() {
     return (
       <>
-        <li>
-          <input type='checkbox' checked={this.props.isCompleted} onChange={this.props.toggleComplete} />
-          <span>{this.props.description}</span>
-          <button style={{ marginLeft: '4px' }} onClick={this.props.deleteTodo}>
-            Delete
+        <div>
+          <input
+            type='checkbox'
+            checked={this.props.isCompleted}
+            onChange={this.props.toggleComplete}
+            className='mr-1'
+          />
+          <label>{this.props.description}</label>
+          <button onClick={this.props.deleteTodo} className='btn btn-outline-danger btn-pill btn-m ml-5'>
+            &times;
           </button>
-        </li>
+        </div>
       </>
     );
   }
